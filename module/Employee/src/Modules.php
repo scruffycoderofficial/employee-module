@@ -18,6 +18,7 @@ final class Modules
     const ENABLED = [
         'Laminas\Router',
         'Laminas\Validator',
-        'Employee'
+        'Laminas\Db',
+        'Capable\Module\Employee'
     ];
 }

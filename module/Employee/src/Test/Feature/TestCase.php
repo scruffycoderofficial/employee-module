@@ -22,7 +22,7 @@ abstract class TestCase extends AbstractConsoleControllerTestCase
 
     protected function setUp()
     {
-        $this->setGlobalConfig([]);
+        $this->overrideGlobalConfig([]);
 
         parent::setUp();
     }

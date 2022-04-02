@@ -17,7 +17,7 @@ use Laminas\Stdlib\ArrayUtils;
 
 trait ConfigConfigurator
 {
-    protected function setGlobalConfig(array $configOverrides)
+    protected function overrideGlobalConfig(array $configOverrides)
     {
         if (!method_exists($this, 'setApplicationConfig')) {
             throw new \Exception("Module Features require Context Configurations in isolation");

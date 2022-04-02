@@ -14,10 +14,23 @@
 namespace Capable\Module\Employee\Action;
 
 use Laminas\View\Model\JsonModel;
+use Capable\Module\Employee\Domain\Model\Table;
 use Laminas\Mvc\Controller\AbstractActionController;
+use Capable\Module\Employee\Domain\Model\EmployeeTable;
 
 class IndexEmployees extends AbstractActionController
 {
+    protected $table;
+
+    public function __construct(Table $table)
+    {
+        if (!$table instanceof EmployeeTable) {
+            throw new \InvalidArgumentException('Incorrect table instance given.');
+        }
+
+        $this->table = $table;
+    }
+
     public function indexAction()
     {
         return new JsonModel([

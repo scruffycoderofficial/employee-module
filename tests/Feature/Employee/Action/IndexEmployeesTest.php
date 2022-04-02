@@ -13,13 +13,13 @@
 
 namespace Capable\Module\Employee\Tests\Feature;
 
-use Capable\Module\Employee\Module;
+use Capable\Module\Employee\Modules;
 use Capable\Module\Employee\Action\IndexEmployees;
 use Capable\Module\Employee\Test\Feature\TestCase;
 
 class IndexEmployeesTest extends TestCase
 {
-    public function testIndexActionCanBeAccessed(): void
+    public function test_index_action_can_be_accessed(): void
     {
         $this->dispatch('/employees', 'GET');
         $this->assertResponseStatusCode(200);
@@ -29,7 +29,7 @@ class IndexEmployeesTest extends TestCase
         $this->assertMatchedRouteName('employees');
     }
 
-    public function testInvalidRouteDoesNotCrash(): void
+    public function test_invalid_route_does_not_rash(): void
     {
         $this->dispatch('/invalid/route', 'GET');
         $this->assertResponseStatusCode(404);
@@ -37,6 +37,6 @@ class IndexEmployeesTest extends TestCase
 
     public function loadedConfigs()
     {
-        return (new Module)->getConfig();
+        return Modules::ENABLED;
     }
 }
