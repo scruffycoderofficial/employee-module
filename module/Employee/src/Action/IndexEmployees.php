@@ -18,7 +18,8 @@ use Laminas\Mvc\Controller\AbstractActionController;
 
 class IndexEmployees extends AbstractActionController
 {
-    public function indexAction() {
+    public function indexAction()
+    {
         return new JsonModel([
             'data' => [],
             'success' => true,
