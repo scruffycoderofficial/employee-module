@@ -14,21 +14,21 @@
 namespace Capable\Module\Employee\Action;
 
 use Laminas\View\Model\JsonModel;
-use Capable\Module\Employee\Domain\Model\Table;
 use Laminas\Mvc\Controller\AbstractActionController;
-use Capable\Module\Employee\Domain\Model\EmployeeTable;
+use Capable\Module\Employee\Domain\Model\Repository\EmployeesRepository;
+use Capable\Module\Employee\Domain\Model\Repository\EmployeesRepositoryInterface;
 
 class IndexEmployees extends AbstractActionController
 {
-    protected $table;
+    protected $employeesRepository;
 
-    public function __construct(Table $table)
+    public function __construct(EmployeesRepositoryInterface $employeesRepository)
     {
-        if (!$table instanceof EmployeeTable) {
-            throw new \InvalidArgumentException('Incorrect table instance given.');
+        if (!$employeesRepository instanceof EmployeesRepository) {
+            throw new \InvalidArgumentException('Incorrect repoository instance given.');
         }
 
-        $this->table = $table;
+        $this->employeesRepository = $employeesRepository;
     }
 
     public function indexAction()

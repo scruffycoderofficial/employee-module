@@ -41,7 +41,7 @@ return [
             Employee\Domain\Model\Repository\EmployeesRepositoryInterface::class => Employee\Domain\Model\Repository\EmployeesRepository::class,
         ],
         'factories' => [
-            Employee\Domain\Model\Repository\EmployeesRepository::class => Employee\Domain\Model\Repository\EmployeesRepository::class,
+            Employee\Domain\Model\Repository\EmployeesRepository::class => Employee\Domain\Model\Repository\EmployeesRepositoryFactory::class,
         ],
         'invokables' => [],
         'delegators' => [],
