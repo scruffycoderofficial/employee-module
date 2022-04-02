@@ -44,9 +44,9 @@ class Module implements ConfigProviderInterface, DependencyIndicatorInterface
 
     public function getServiceConfig()
     {
-        return array(
-            'factories' => array(
-                Employee\Domain\Model\Table\EmployeeTable::class =>  function($sm) {
+        return [
+            'factories' => [
+                Employee\Domain\Model\Table\EmployeeTable::class =>  function ($sm) {
                     return new Employee\Domain\Model\Table\EmployeeTable($sm->get('EmployeeTableGateway'));
                 },
                 'AlbumTableGateway' => function ($sm) {
@@ -57,7 +57,7 @@ class Module implements ConfigProviderInterface, DependencyIndicatorInterface
 
                     return new TableGateway('emplooyee', $dbAdapter, null, $resultSetPrototype);
                 },
-            ),
-        );
+            ],
+        ];
     }
 }
