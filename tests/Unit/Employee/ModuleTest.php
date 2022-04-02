@@ -11,11 +11,12 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-namespace Capable\Module\Employee\Tests;
+namespace Capable\Module\Employee\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 use Capable\Module\Employee\Module;
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\ModuleManager\Feature\DependencyIndicatorInterface;
 
 class ModuleTest extends TestCase
 {
@@ -27,5 +28,15 @@ class ModuleTest extends TestCase
     public function test_it_provides_an_array_of_configs()
     {
         self::assertTrue(is_array((new Module())->getConfig()));
+    }
+
+    public function test_it_is_dependency_indicator()
+    {
+        self::assertInstanceOf(DependencyIndicatorInterface::class, new Module());
+    }
+
+    public function test_it_provides_an_array_of_indicated_dependencies()
+    {
+        self::assertTrue(is_array((new Module())->getModuleDependencies()));
     }
 }

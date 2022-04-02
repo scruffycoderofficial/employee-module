@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b378df7d99b47c19fb5d36d2ee8ffed",
+    "content-hash": "7883b78851362907020610de5d582dfd",
     "packages": [],
     "packages-dev": [
         {
@@ -565,64 +565,6 @@
             "time": "2021-11-15T17:17:55+00:00"
         },
         {
-            "name": "kahlan/kahlan",
-            "version": "5.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kahlan/kahlan.git",
-                "reference": "49a4717a341c78fb145ae5ffcf8604fce98c1950"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kahlan/kahlan/zipball/49a4717a341c78fb145ae5ffcf8604fce98c1950",
-                "reference": "49a4717a341c78fb145ae5ffcf8604fce98c1950",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "^3.4"
-            },
-            "bin": [
-                "bin/kahlan"
-            ],
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
-                "psr-4": {
-                    "Kahlan\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "CrysaLEAD"
-                }
-            ],
-            "description": "The PHP Test Framework for Freedom, Truth and Justice.",
-            "keywords": [
-                "BDD",
-                "Behavior-Driven Development",
-                "Monkey Patching",
-                "TDD",
-                "mock",
-                "stub",
-                "testing",
-                "unit test"
-            ],
-            "support": {
-                "issues": "https://github.com/kahlan/kahlan/issues",
-                "source": "https://github.com/kahlan/kahlan/tree/5.0.2"
-            },
-            "time": "2020-12-28T20:33:30+00:00"
-        },
-        {
             "name": "laminas/laminas-config",
             "version": "3.3.0",
             "source": {
@@ -695,6 +637,72 @@
             "time": "2019-12-31T16:30:11+00:00"
         },
         {
+            "name": "laminas/laminas-console",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-console.git",
+                "reference": "478a6ceac3e31fb38d6314088abda8b239ee23a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-console/zipball/478a6ceac3e31fb38d6314088abda8b239ee23a5",
+                "reference": "478a6ceac3e31fb38d6314088abda8b239ee23a5",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-stdlib": "^3.2.1",
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "replace": {
+                "zendframework/zend-console": "self.version"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-filter": "^2.7.2",
+                "laminas/laminas-json": "^2.6 || ^3.0",
+                "laminas/laminas-validator": "^2.10.1",
+                "phpunit/phpunit": "^5.7.23 || ^6.4.3"
+            },
+            "suggest": {
+                "laminas/laminas-filter": "To support DefaultRouteMatcher usage",
+                "laminas/laminas-validator": "To support DefaultRouteMatcher usage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev",
+                    "dev-develop": "2.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Console\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Build console applications using getopt syntax or routing, complete with prompts",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "console",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-console/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-console/issues",
+                "rss": "https://github.com/laminas/laminas-console/releases.atom",
+                "source": "https://github.com/laminas/laminas-console"
+            },
+            "abandoned": "laminas/laminas-cli",
+            "time": "2019-12-31T16:31:45+00:00"
+        },
+        {
             "name": "laminas/laminas-db",
             "version": "2.11.4",
             "source": {
@@ -765,6 +773,63 @@
                 }
             ],
             "time": "2021-02-20T18:52:15+00:00"
+        },
+        {
+            "name": "laminas/laminas-dom",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-dom.git",
+                "reference": "631fa74ae6f68e9019b73512f1b3b139d43f3572"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-dom/zipball/631fa74ae6f68e9019b73512f1b3b139d43f3572",
+                "reference": "631fa74ae6f68e9019b73512f1b3b139d43f3572",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "replace": {
+                "zendframework/zend-dom": "self.version"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "phpunit/phpunit": "^5.7.23 || ^6.4.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7.x-dev",
+                    "dev-develop": "2.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Dom\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides tools for working with DOM documents and structures",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "dom",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-dom/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-dom/issues",
+                "rss": "https://github.com/laminas/laminas-dom/releases.atom",
+                "source": "https://github.com/laminas/laminas-dom"
+            },
+            "time": "2019-12-31T16:43:02+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -1452,6 +1517,93 @@
                 "source": "https://github.com/laminas/laminas-stdlib"
             },
             "time": "2019-12-31T17:51:15+00:00"
+        },
+        {
+            "name": "laminas/laminas-test",
+            "version": "3.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-test.git",
+                "reference": "da508dd32bdedd8f2757887ad7dfed3cf5faea2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-test/zipball/da508dd32bdedd8f2757887ad7dfed3cf5faea2d",
+                "reference": "da508dd32bdedd8f2757887ad7dfed3cf5faea2d",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-console": "^2.6",
+                "laminas/laminas-dom": "^2.6",
+                "laminas/laminas-eventmanager": "^2.6.2 || ^3.0",
+                "laminas/laminas-http": "^2.8.3",
+                "laminas/laminas-mvc": "^3.0",
+                "laminas/laminas-servicemanager": "^2.7.5 || ^3.0.3",
+                "laminas/laminas-stdlib": "^2.7 || ^3.0",
+                "laminas/laminas-uri": "^2.5",
+                "laminas/laminas-view": "^2.6.3",
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^5.6 || ^7.0",
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "replace": {
+                "zendframework/zend-test": "^3.3.0"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-i18n": "^2.6",
+                "laminas/laminas-log": "^2.7.1",
+                "laminas/laminas-modulemanager": "^2.7.1",
+                "laminas/laminas-mvc-console": "^1.1.8",
+                "laminas/laminas-mvc-plugin-flashmessenger": "^0.1.0",
+                "laminas/laminas-serializer": "^2.6.1",
+                "laminas/laminas-session": "^2.8.5",
+                "laminas/laminas-validator": "^2.8",
+                "mikey179/vfsstream": "~1.2"
+            },
+            "suggest": {
+                "laminas/laminas-mvc-console": "^1.1.8, to test MVC <-> console integration"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4.x-dev",
+                    "dev-develop": "3.5.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "autoload/phpunit-class-aliases.php"
+                ],
+                "psr-4": {
+                    "Laminas\\Test\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Tools to facilitate unit testing of laminas-mvc applications",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "laminas",
+                "test"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-test/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-test/issues",
+                "rss": "https://github.com/laminas/laminas-test/releases.atom",
+                "source": "https://github.com/laminas/laminas-test"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-05-20T14:56:04+00:00"
         },
         {
             "name": "laminas/laminas-uri",

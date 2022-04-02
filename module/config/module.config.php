@@ -11,4 +11,32 @@
  * distribution, and is available at http://opensource.org/licenses/BSD-2-Clause
  */
 
-return [];
+namespace Capable\Module\Employee;
+
+use Laminas\ServiceManager\Factory\InvokableFactory;
+use Laminas\Router\Http\Literal;
+
+return [
+    'controllers' => [
+        'factories' => [
+            Action\IndexEmployees::class => InvokableFactory::class,
+        ],
+    ],
+    'view_manager' => [
+        'template_path_stack' => ['employee' => __DIR__ . '/../view',],
+    ],
+    'router' => [
+        'routes' => [
+            'employees' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route' => '/employees',
+                    'defaults' => [
+                        'controller' => Action\IndexEmployees::class,
+                        'action' => 'index',
+                    ],
+                ],
+            ],
+        ],
+    ],
+];

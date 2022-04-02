@@ -13,6 +13,7 @@
 
 namespace spec\Capable\Module\Employee;
 
+use Laminas\ModuleManager\Feature\DependencyIndicatorInterface;
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Capable\Module\Employee\Module;
 use PhpSpec\ObjectBehavior;
@@ -33,5 +34,15 @@ class ModuleSpec extends ObjectBehavior
     public function it_provides_an_array_of_configs()
     {
         $this->getConfig()->shouldBeArray();
+    }
+
+    public function it_implements_dependency_indicator_interface()
+    {
+        $this->shouldImplement(DependencyIndicatorInterface::class);
+    }
+
+    public function it_provides_an_array_of_module_dependencies()
+    {
+        $this->getModuleDependencies()->shouldBeArray();
     }
 }
