@@ -17,6 +17,7 @@ $finder = PhpCsFixer\Finder::create()
     ->in([
         __DIR__ . '/module',
         __DIR__ . '/spec',
+        __DIR__ . '/tests',
     ])
     ->exclude([]);
 
