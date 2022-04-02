@@ -1,4 +1,12 @@
 {
+  "name": "scruffycoderofficial/employee-module",
+  "description": "A Beyond Capable module",
+  "keywords": [
+    "Employees Module",
+    "Laminas",
+    "Laminas Module"
+  ],
+  "type": "package",
   "autoload": {
     "psr-4": {
       "Capable\\Module\\Employee\\": "module/Employee/src/"
