@@ -1,0 +1,8 @@
+formatter.name: pretty
+
+suites:
+
+  employee_module_suite:
+    namespace: Capable\Module\Employee
+    psr4_prefix: Capable\Module\Employee
+    src_path: '%paths.config%/module/Employee/src/'
